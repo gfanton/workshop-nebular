@@ -9,7 +9,7 @@ additionalRepositories:
 
 tasks:
   - name: Gno Deps
-    before: git -C ../gno checkout 608ca308670ffec533eb8ff2a0ecfd2421d56d9d
+    before: git -C ../gno checkout 3b42391db98f7be35a99f9a060b589f6b69fd3e3
     init: |
       # add work and sync
       go -C .. work init && go -C .. work add -r . && go -C .. work sync
