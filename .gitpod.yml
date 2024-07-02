@@ -3,22 +3,26 @@
 additionalRepositories:
   - url: https://github.com/gnolang/gno
     checkoutLocation: gno
+  - url: https://github.com/gnolang/gnopls
+    checkoutLocation: gnopls
+
 
 tasks:
-  - name: Checkout Version
-    init: git -C ../gno 608ca308670ffec533eb8ff2a0ecfd2421d56d9d
-
-  - name: Install Deps
-    init: make -C ../gno/misc/devdeps install
-
-  - name: Install Gno
-    init: go -C ../gno/gnovm install -v ./cmd/gno
-
-  - name: Install Gnoweb & Gnoland
-    init: go -C ../gno/gno.land install -v ./cmd/gnoweb ./cmd/gnoland ./cmd/gnokey
-
-  - name: Install Gnodev
-    init: go -C ../gno/contribs/gnodev install -v ./cmd/gnodev
+  - name: Gno Deps
+    before: git -C ../gno 608ca308670ffec533eb8ff2a0ecfd2421d56d9d
+    init: |
+      # add work and sync
+      go -C .. work init && go -C .. work add -r . && go -C .. work sync
+      # install gno dev deps
+      make -C ../gno/misc/devdeps install
+      # install gno
+      go -C ../gno/gnovm install -v ./cmd/gno
+      # install gnoweb, gnoland, gnokey
+      go -C ../gno/gno.land install -v ./cmd/gnoweb ./cmd/gnoland ./cmd/gnokey
+      # install gnodev
+      go -C ../gno/contribs/gnodev install -v ./cmd/gnodev
+      # exit
+      echo "Deps installed"
 
 ports:
   - name: gnoweb
