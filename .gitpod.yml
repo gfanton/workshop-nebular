@@ -6,7 +6,7 @@ additionalRepositories:
 
 tasks:
   - name: Checkout Version
-    init: git -C ../gno 79a71a47f987c5fad28be73b56ac7d3691774840
+    init: git -C ../gno 608ca308670ffec533eb8ff2a0ecfd2421d56d9d
 
   - name: Install Deps
     init: make -C ../gno/misc/devdeps install
