@@ -12,13 +12,12 @@ all: deps
 
 deps: $(GNO_ROOT) checkout _deps
 _deps:
+# install gnopls
+	go install -v $(GNOPLS_REPO)@latest
 # install gno dev deps
 	$(MAKE) -C $(GNO_ROOT)/misc/devdeps install
 # install gno
 	$(MAKE) -C $(GNO_ROOT) install
-# install gnopls
-	go install -v $(GNOPLS_REPO)@latest
-
 
 checkout:
 	$(git_gno) cat-file -e $(GNO_COMMIT) || $(git_gno) fetch

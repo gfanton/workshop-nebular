@@ -8,8 +8,9 @@ tasks:
   - name: Gno Deps
     env:
       GNO_ROOT: '../gno'
-    before: echo "alias gnodev='gnodev -web-remote=$(gp url 8888)'" >> ~/.bashrc
+    before: echo "alias gnodev='gnodev -web-remote=$(gp url 8888)'" >> $HOME/.bashrc
     init: make deps
+    command: source $HOME/.bashrc
 
 ports:
   - name: gnoweb
