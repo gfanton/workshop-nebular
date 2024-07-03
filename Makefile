@@ -1,20 +1,24 @@
-GNO_COMMIT ?= 3b42391db98f7be35a99f9a060b589f6b69fd3e3
-
+# gno
+GNO_COMMIT ?= feat/ws/webremote
 GNO_ROOT ?= gno
 GNO_REPO ?= github.com/gnolang/gno
+
+# gnopls
 GNOPLS_REPO ?= github.com/gnolang/gnopls
 
 git_gno := git -C $(GNO_ROOT)
 
 all: deps
 
-deps: $(GNO_ROOT) checkout
+deps: $(GNO_ROOT) checkout _deps
+_deps:
 # install gno dev deps
 	$(MAKE) -C $(GNO_ROOT)/misc/devdeps install
 # install gno
 	$(MAKE) -C $(GNO_ROOT) install
 # install gnopls
 	go install -v $(GNOPLS_REPO)@latest
+
 
 checkout:
 	$(git_gno) cat-file -e $(GNO_COMMIT) || $(git_gno) fetch
