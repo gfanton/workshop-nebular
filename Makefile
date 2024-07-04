@@ -12,8 +12,6 @@ all: deps
 
 deps: $(GNO_ROOT) checkout _deps
 _deps:
-# install gnopls
-	go install -v $(GNOPLS_REPO)@latest
 # install gno dev deps
 	$(MAKE) -C $(GNO_ROOT)/misc/devdeps install
 # install gno
