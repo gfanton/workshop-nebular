@@ -1,15 +1,9 @@
 package main
 
-import (
-	"testing"
-
-	"gno.land/p/demo/avl"
-)
+import "testing"
 
 func TestSum(t *testing.T) {
 	const expected = 3
-
-	_ = avl.Tree{}
 
 	actual := Sum(1, 2)
 	if actual != expected {
