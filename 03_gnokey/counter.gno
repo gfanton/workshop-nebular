@@ -15,7 +15,7 @@ func Add(value int) {
 }
 
 func Render(path string) string {
-	view := "# My First Gno Realm \n"
+	view := "# My Super Counter \n"
 	view += "* my counter is: " + strconv.Itoa(count)
 	return view
 }
