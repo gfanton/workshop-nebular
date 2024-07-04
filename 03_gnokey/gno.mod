@@ -1,1 +1,1 @@
-module gno.land/r/nebular24/counter
+module gno.land/r/nebular24/gnokey
