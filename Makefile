@@ -3,9 +3,6 @@ GNO_COMMIT ?= feat/ws/webremote
 GNO_ROOT ?= gno
 GNO_REPO ?= github.com/gnolang/gno
 
-# gnopls
-GNOPLS_REPO ?= github.com/gnolang/gnopls
-
 git_gno := git -C $(GNO_ROOT)
 
 all: deps

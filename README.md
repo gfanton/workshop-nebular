@@ -3,12 +3,12 @@
 Hello and welcome to my nebebular 2024 Workshop !
 
 This short workshop will give you the basic to create, debug and deploay smart contracts on Gno.Land. 
-You will discover the gnolang and gnoland ecosystem tools: `gno`, `gnodev` and `gnokey`.
+You will discover the gno and gnoland ecosystem tools: `gno`, `gnodev` and `gnokey`.
 And ultimatly deploy your first smart contract on gno.land.
 
-#### 01_Gnolang
+#### 01_Gno
 
-This part focus on `gno`, the CLI Tool comanion for gnolang, the intereted go language. In this part there is no blockchain.
+This part focus on `gno`, the CLI Tool comanion for gno, the intereted go language. In this part there is no blockchain.
 
 #### 02_Gnodev
 

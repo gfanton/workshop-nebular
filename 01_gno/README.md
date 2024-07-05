@@ -1,6 +1,6 @@
-## 01_Gnolang - Go, little brother
+## 01_Gno - Go, little brother
 
-In this section, you will learn to use the `gno` CLI to write and test Gnolang packages. This part does not rely on a blockchain; instead, it operates solely on the GnoVM.
+In this section, you will learn to use the `gno` CLI to write and test Gno packages. This part does not rely on a blockchain; instead, it operates solely on the GnoVM.
 
 ### Package
 
@@ -12,7 +12,7 @@ A GNO package is generally composed of:
 
 Explore the different files in the current package (in the same folder as this README).
 
-### Run Gnolang Package
+### Run Gno Package
 To execute your package, run the following command from the directory containing the package:
 
 ```bash
@@ -21,7 +21,7 @@ $ gno run .
 
 This command runs the `main()` function in the `main.gno` file, which serves as the entry point of the package.
 
-### Testing Gnolang Packages
+### Testing Gno Packages
 Run tests using the `gno test .` command. This command executes all functions prefixed with `Test` in files that are suffixed with `_test.gno`.
 
 ```bash
