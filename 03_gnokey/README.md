@@ -31,8 +31,12 @@ $ gnodev ./04_gnokey
 
 To load the `counter` package on `gno.land/r/nebular24/gnokey`
 
-`gnodev` should automatically load the key you just created. You can verify this by pressing `A` within `gnodev` to display all known accounts and their balances.
-In `gnodev`, your account should have been premined with enough tokens to do whatever you want.
+`gnodev` should automatically load the key you just created. You can verify this
+by pressing `A` within `gnodev` to display all known accounts and their
+balances. 
+
+In `gnodev`, your account should have been premined with enough tokens
+to do whatever you want.
 
 ### Interact with the contract
 

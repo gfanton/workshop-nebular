@@ -1,15 +1,27 @@
-## 02_Gnodev - Debug And Visualization
+## 02_Gnodev - Debuging and Visualization
 
-`gnodev` is a gno developement tool to works on gno package. It embed a fully fonctional `gnoland` node (blockchain), along `gnoweb`, a web server used to explore a visualize `gnoland` realm.
+`gnodev` is a Gno development tool that works on the Gno package. It embeds a fully functional `gnoland` node (blockchain), along with `gnoweb`, a web server used to explore and visualize the `gnoland` realm.
 
-By watching your development directory, `gnodev` detects changes in your Gno code,
-reflecting them in the state of the node immediately. `gnodev` also runs a local
-instance of gnoweb, allowing you to see the rendering of your Gno code
-instantly.
-
+By watching your development directory, `gnodev` detects changes in your Gno code and reflects them in the state of the node immediately. `gnodev` also runs a local instance of `gnoweb`, allowing you to see the rendering of your Gno code instantly.
 
 ### Start gnodev
 
-To start `gnodev`, simply target a 
+To start `gnodev` on a given package, simply use the command `gnodev <pkg_path>`.
 
+To start gnodev with the package located in this folder, use:
+```bash
+$ gnodev ./02_gnodev
+```
 
+> You can exit `gnodev` at any time using `Ctrl+C`.
+
+### Gnoweb
+
+`gnodev` will automatically serve `gnoweb` (by default on `:8888`).
+
+> In this demo, if you are using gitpod, a browser tab will open on `gnoweb` when running `gnodev`
+
+- On a local machine you should be able to accesse `gnoweb` in your browser with http://localhost:8888.
+- If you are using gitpod, you can retreive `gnoweb` url by typing `gp url 8888` in your terminal session
+
+### Access you realm
