@@ -37,11 +37,12 @@ $ gnokey maketx addpkg "<MY_KEY_NAME>" \
     -broadcast \
     -chainid portal-loop \
     -remote https://rpc.gno.land
+
+# * `MY_KEY_NAME`: the name of your key used in the gnokey section; use `gnokey list` to retrieve it.
+# * `LOCAL_PKG_DIR`: the local directory containing the realm (package) you want to publish.
+# * `PKG_PATH_NAME`: the package path name you chose in step 1.
+# * You will be prompted for your key password.
 ```
-    * `MY_KEY_NAME`: the name of your key used in the gnokey section; use `gnokey list` to retrieve it.
-    * `LOCAL_PKG_DIR`: the local directory containing the realm (package) you want to publish.
-    * `PKG_PATH_NAME`: the package path name you chose in step 1.
-    * You will be prompted for your key password.
 3. Visit your realm on `gno.land` using the package path you chose in step 1.
     * Example: `https://gno.land/r/g1hr3dl82edy84a5f3dmchh0due7zgwm5rnns6na/myrealm`
 
