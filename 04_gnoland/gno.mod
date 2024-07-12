@@ -1,1 +1,1 @@
-module gno.land/r/nebular24/goldenbook
+module gno.land/r/nebular24/guessbook

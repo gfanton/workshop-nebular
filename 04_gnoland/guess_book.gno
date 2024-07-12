@@ -1,4 +1,4 @@
-package goldenbook
+package guessbook
 
 import (
 	"std"
