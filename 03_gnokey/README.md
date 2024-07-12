@@ -26,7 +26,7 @@ This should correctly display your newly created key.
 As in the previous exercise, start `gnodev` target this directory by typing
 
 ```
-$ gnodev ./04_gnokey
+$ gnodev ./03_gnokey
 ```
 
 To load the `counter` package on `gno.land/r/nebular24/gnokey`
