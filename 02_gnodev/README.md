@@ -1,6 +1,6 @@
 ## 02_Gnodev - Debuging and Visualization
 
-`gnodev` is a Gno development tool that works on the Gno package. It embeds a fully functional `gnoland` node (blockchain), along with `gnoweb`, a web server used to explore and visualize the `gnoland` realm.
+`gnodev` is a Gno development tool to works on the Gno package. It embeds a fully functional `gnoland` node (blockchain), along with `gnoweb`, a web server used to explore and visualize the `gnoland` realm.
 
 By watching your development directory, `gnodev` detects changes in your Gno code and reflects them in the state of the node immediately. `gnodev` also runs a local instance of `gnoweb`, allowing you to see the rendering of your Gno code instantly.
 

@@ -1,26 +1,38 @@
 # Nebular Workshop
 
-Hello and welcome to my nebebular 2024 Workshop !
+Welcome to my Nebular 2024 Workshop!
 
-This short workshop will give you the basic to create, debug and deploay smart contracts on Gno.Land. 
-You will discover the gno and gnoland ecosystem tools: `gno`, `gnodev` and `gnokey`.
-And ultimatly deploy your first smart contract on gno.land.
+This workshop will provide you with the basics to create, debug, and deploy smart contracts on Gno.Land. You will explore the Gnolang and Gnoland ecosystem tools: `gno`, `gnodev`, and `gnokey`.
+Ultimately, you will deploy your first smart contract on Gno.Land.
 
-#### 01_Gno
+This is the local developement experience, there is other way to develop on gno. take a look a https://play.gno.land
 
-This part focus on `gno`, the CLI Tool comanion for gno, the intereted go language. In this part there is no blockchain.
+### How To Play With This Workshop:
 
-#### 02_Gnodev
+#### GitPod (recommended)
+Use GitPod, a remote machine embedding an editor and all the necessary tools already installed
+[![Open in GitPod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gfanton/workshop-nebular)
 
-This part focus on `gnodev`, the gno developement tool to works on gno package. It embed an `gnoland` blockchain and `gnoweb`, a webapp to help you visualize you contract
+#### Locally
+You will need [Golang](https://go.dev/doc/install) installed and set up.
+Then clone this repo and run `make deps` to install the necessary dependencies.
+It will:
+-  clone a forked version of GNO (necessary to work with GitPod)
+-  install the necessary tools `gno`, `gnodev`, `gnoland`
 
-#### 03_Gnokey
+## 01_Gnolang
 
-This part focus on `gnokey`, the gno developement tool to interact with the chain.
+This section focuses on `gno`, the CLI tool companion for Gnolang, the integrated Go language. There is no blockchain involved in this part.
 
-#### 04_GnoLand
+## 02_Gnodev
 
-This part focus on `gnokey`, the gno developement tool to interact with the chain.
+This section focuses on `gnodev`, the Gno development tool for working on Gno packages. It embeds a `gnoland` blockchain and `gnoweb`, a web application to help you visualize your contract.
 
+## 03_Gnokey
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gfanton/workshop-nebular)
+This section focuses on `gnokey`, the Gno development tool for interacting with the chain.
+
+## 04_Gno.Land
+
+This section focuses on publishing a contract on `gno.land`.
+
