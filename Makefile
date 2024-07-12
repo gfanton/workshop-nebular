@@ -16,7 +16,7 @@ _deps:
 
 checkout:
 	$(git_gno) cat-file -e $(GNO_COMMIT) || $(git_gno) fetch
-	$(git_gno) checkout $(GNO_COMMIT) 
+	$(git_gno) checkout $(GNO_COMMIT) && $(git_gno) pull
 
 update: $(GNO_ROOT)
 	$(git_gno) pull	--rebase

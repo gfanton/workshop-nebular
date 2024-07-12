@@ -24,4 +24,10 @@ $ gnodev ./02_gnodev
 - On a local machine you should be able to accesse `gnoweb` in your browser with http://localhost:8888.
 - If you are using gitpod, you can retreive `gnoweb` url by typing `gp url 8888` in your terminal session
 
-### Access you realm
+### Access Your Realm
+
+You can then access your realm by reaching `http://<gnoweb_url>/<module_path>` url.
+
+So for the realm (package) located in the same directory as this `README`, it will be:
+-  `http://localhost:8888/r/nebular24/gnodev` in case of gnodev running locally on your machine 
+-  `$(gp url 8888)/r/nubular24/gnodev` in case of gnodev running on gitpod
