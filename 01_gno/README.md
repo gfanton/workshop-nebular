@@ -1,6 +1,6 @@
 ## 01_Gno - Go, little brother
 
-In this section, you will learn to use the `gno` CLI to write and test Gno packages. This part does not rely on a blockchain; instead, it operates solely on the GnoVM.
+In this section, you will learn to use the `gno` CLI to run and test Gno packages. This part does not rely on a blockchain; instead, it operates solely on the GnoVM.
 
 ### Package
 
