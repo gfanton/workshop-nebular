@@ -31,9 +31,8 @@ Now, it's time to upload your first package. We'll upload the package inside `04
 $ gnokey maketx addpkg "<MY_KEY_NAME>" \
     -pkgpath "<PKG_PATH_NAME>" \
     -pkgdir "<LOCAL_PKG_DIR>" \
-    -deposit 1000000ugnot \
-    -gas-fee 100000ugnot \
-    -gas-wanted 1000000 \
+    -gas-fee 1ugnot \
+    -gas-wanted 10000000 \
     -broadcast \
     -chainid portal-loop \
     -remote https://rpc.gno.land

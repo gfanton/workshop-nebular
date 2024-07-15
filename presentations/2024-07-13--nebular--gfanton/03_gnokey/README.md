@@ -46,9 +46,8 @@ You can then interact with the realm using the `maketx call` command from gnokey
 $ gnokey maketx call \
 	-pkgpath "gno.land/r/nebular24/gnokey" \
 	-func "Inc" \
-	-gas-fee 1000000ugnot \
+	-gas-fee 1ugnot \
 	-gas-wanted 2000000 \
-	-send "100000000ugnot" \
 	-broadcast \
 	-chainid "dev" \
 	-remote "127.0.0.1:26657" mykeyname
